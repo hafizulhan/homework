@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 1(b)</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <ul>
+            <li><a href="Q1a.html">Q1-a</a></li>
+            <li><a href="Q1b.html">Q1-b</a></li>
+            <li><a class="active" href="Q1c.html">Q1-c</a></li>
+            <li><a href="Q1d.html">Q1-d</a></li>
+        </ul>
+        <h2>Question 1(c): Numbers Play</h2>
+        <button class="button" onclick="myPopup()">Let's Play With Numbers</button>
+        <script>
+            function myPopup() {
+                var ans = prompt("Enter a number between 1-100:");
+                var num = parseInt(ans);
+                if (isNaN(num)) {
+                    alert(ans + " is not a number");
+                } else {
+                    switch (true) {
+                        case (num < 50):
+                            alert(num + " is less than fifty");
+                            break;
+                        case (num == 50):
+                            alert(num + " is 50");
+                            break;
+                        case (num < 100):
+                            alert(num + " is less than 100");
+                            break;
+                        default:
+                            alert(num + " is others");
+                            break;
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

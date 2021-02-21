@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 1(b)</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <ul>
+            <li><a href="Q1a.html">Q1-a</a></li>
+            <li><a href="Q1b.html">Q1-b</a></li>
+            <li><a href="Q1c.html">Q1-c</a></li>
+            <li><a class="active" href="Q1d.html">Q1-d</a></li>
+        </ul>
+        <h2>Question 1(d): Popup Window</h2>
+        <button class="button" onclick="myPopup()">Open a popup window</button>
+        <script>
+            function myPopup() {
+                window.open("Q1d-w.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=300,left=300,width=400,height=200");
+            }
+        </script>
+    </body>
+</html>
